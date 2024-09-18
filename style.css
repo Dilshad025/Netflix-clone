@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(IN-en-20240827-TRIFECTA-perspective_WEB_c292a608-cdc6-4686-8dc8-405bfcf753af_large.jpg);
+    height: 70vh;
+    background-position: center center;
+    /* isse photo apni jagha fix hojaiga chota krne per bhi bich wala hissa bich me rahega side ka katega */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /* 1200 se 100 tk me ye adjust hojaiga ager chota bhi krege to image uper niche nai hoga */
+}
+
+.opacity {
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    align-items: center;
+    margin: auto;
+    height: 62px;
+    /* flex-wrap: nowrap; */
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+    width: 133px;
+    /* isse netflix bahar agya hai aur dark me bhi */
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    /* width:558px;
+    line-height: 70px; */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sep {
+    height: 7px;
+    background-color: rgb(56, 56, 56);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    cursor: pointer;
+    /* isse click mouse hand mouse hojaiga lejane per */
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main input::placeholder {
+    font-size: 20px;
+}
+
+.boxx {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:550px) {
+    .main input {
+        font-size: 7px;
+        padding: 2px 16px;
+    }
+
+    .btn-red {
+        padding: 3px 4px;
+        font-size: 14px;
+    }
+    .main input::placeholder {
+        font-size: 10px;
+    }
+    nav img {
+        width: 110px;
+    }
+    .btn {
+        padding: 1px 4px;
+        
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100vw;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 28px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 12px;
+    }
+    .hero :nth-child(3) {
+        font-size: 10px;
+    }
+}
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secimg img {
+    width: 555px;
+    /* height: 58vh; */
+    position: relative;
+    z-index: 10;
+    /* background-position: center center; */
+}
+
+.secimg {
+    position: relative;
+    top: 4px;
+}
+
+.secimg video {
+    position: absolute;
+    top: 125px;
+    right: 80px;
+}
+
+.secimg video {
+    width: 400px;
+    /* height: 40vh; */
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.faq {
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 80px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif;
+    background-color: rgba(73, 72, 72, 0.7);
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    transition: all 1s ease-out;
+    flex-wrap: wrap;
+}
+
+.redd {
+    display: flex;
+    justify-content: center;
+}
+
+.slogan {
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.slo2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.check input {
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.check {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 30px;
+}
+
+.box:hover {
+    background-color: darkgray;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    /* max-width: 60vw;
+    margin: auto; */
+}
+
+@media screen and (max-width:1200px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secimg img {
+        width: 355px;
+        top: 30px;
+        right: 30px;
+    }
+
+    .secimg video {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        /* max-width: 60vw;
+        margin: auto; */
+    }
+}
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .question {
+    padding: 34px 0px;
+}
